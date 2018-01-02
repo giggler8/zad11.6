@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background-color: #2ecc71;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+button {
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: teal;
+    cursor: pointer;   
+}
+.center {
+    text-align: center;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    background-color: white;
+    margin: 5px 10px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+    border-radius: 20px;
+    min-width: 300px;
+}
+.column-title {
+    text-align: center;
+}
+.column-delete {
+    float: right;
+}
+.add-card {
+    float: left;
+}
+ ul {
+     list-style-type: none;
+ }
+ .column-card-list {
+    min-height: 200px;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    cursor: move;
+}
+.card .btn-delete,
+.card .card-description {
+      display: inline-block; 
+}
+.card-placeholder {
+    background: #2A4457;
+    height: 30px;
+    width: 100%; 
+}
+#calendar {
+    width: 200px;
+    margin: 5vh auto 0;
+    text-align: center;
+}
+
+#month { 
+  background-color: #e74c3c;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+#day { 
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 100px;
+  padding-bottom: 2px;
+  position: relative;
+}
+#day:after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  right:0;
+  border-right: #2ecc71 45px solid;
+  border-top: rgba(0,0,0,.18) 45px solid; 
+}
